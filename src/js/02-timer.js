@@ -39,6 +39,7 @@ const options = {
 flatpickr(inputEl, options);
 
 const startTimer = () => {
+  startBtnEl.setAttribute("disabled", "");
   const intervalId = setInterval(() => {
     const time = periodTime - subtractTime;
 
